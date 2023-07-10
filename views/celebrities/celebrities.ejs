@@ -1,0 +1,12 @@
+<div class="container d-flex flex-column align-items-center">
+    <h2 class="main-header">All the celebrities </h2>
+    <div class="w-75">
+
+      <% if (!allCelebs.length) { %>
+      <h3>There is nothing here..</h3>
+      <% } %> <% allCelebs.forEach(celeb => { %>
+      <h4><%= celeb.name %></h4>
+      <hr />
+      <% }) %>
+    </div>
+  </div>
